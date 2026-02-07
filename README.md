@@ -1,2 +1,2 @@
 # fastapi-with-db
-https://fastapi-with-db-a5hw.onrender.com
+https://fast-api-application-1-dx96.onrender.com
