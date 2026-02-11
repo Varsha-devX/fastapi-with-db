@@ -6,10 +6,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-base=declarative_base()
+Base=declarative_base()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
-print("DATABASE_URL", DATABASE_URL)
+
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL environment variable is not set. Please add it to your .env file.")
 
 engine = create_engine(DATABASE_URL)
 
