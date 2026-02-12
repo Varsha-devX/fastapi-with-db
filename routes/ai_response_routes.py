@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from db import get_db
 from models import ChatMessage
 from utils.ai_response import get_completion
-from schemas.ai_response_schemas import AIRequest, AIResponse, ChatHistoryResponse
+from schemaS.ai_response_schemas import AIRequest, AIResponse, ChatHistoryResponse
 from datetime import datetime
 
 router = APIRouter()
